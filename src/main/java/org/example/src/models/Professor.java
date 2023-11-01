@@ -1,4 +1,6 @@
-package org.example;
+package org.example.src.models;
+
+import org.example.exceptions.ExameException;
 
 import java.util.Random;
 

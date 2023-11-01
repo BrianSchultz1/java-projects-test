@@ -1,4 +1,4 @@
-package org.example;
+package org.example.src.models;
 
 public class Diretor extends Professor {
     private String departamento;

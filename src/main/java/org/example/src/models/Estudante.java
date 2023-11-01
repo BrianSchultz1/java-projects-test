@@ -1,6 +1,10 @@
-package org.example;
+package org.example.src.models;
 
-public class Estudante extends Pessoa implements Apresentavel {
+import org.example.interfaces.Apresentavel;
+import org.example.exceptions.ExameException;
+import org.example.interfaces.Trabalhador;
+
+public class Estudante extends Pessoa implements Apresentavel, Trabalhador {
     private String curso;
 
     public Estudante(String nome, int idade, String curso) {
@@ -34,5 +38,10 @@ public class Estudante extends Pessoa implements Apresentavel {
     @Override
     public void apresentar() {
         System.out.println("Eu sou um estudante de " + curso + ".");
+    }
+
+    @Override
+    public void trabalhar() {
+        System.out.println("Estou estudando java para conseguir um novo emprego");
     }
 }

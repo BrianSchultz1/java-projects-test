@@ -1,4 +1,6 @@
-package org.example;
+package org.example.src.models;
+
+import org.example.interfaces.Apresentavel;
 
 public class Pessoa implements Apresentavel {
     private String nome;
